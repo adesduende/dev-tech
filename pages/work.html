@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="../src/css/work.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img class="logo" src="../src/img/logo.svg" alt="Logo">
+            <h1>DEV-<span>TECH</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">¿Quienes somos?</a></li>
+                <li><a href="./products.html">Productos y Servicios</a></li>
+                <li><a href="./contact.html">Contacto</a></li>
+                <li><a href="./work.html" active>Trabaja con nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main-container">
+            <article>
+                <h2>¿Quieres trabajar con nosotros?</h2>
+                <p>
+                    Si eres una persona con ganas de aprender, comprometida, seria y responsable. Estas dispuesto a
+                    continuar formandote y aportar tus conocimientos a nuestro equipo.
+                    No dudes en rellenar el formulario de contacto.
+                </p>
+            </article>
+            <article>
+                <h2>Formulario de contacto</h2>
+                <form action="mailto:sll0019@alu.medac.es" method="post">
+                    <fieldset name="datos_personales">
+                        <legend>Datos personales</legend>
+                        <div class="grid">
+                            <label class="col" for="name">Nombre</label>
+                            <input class="col" type="text" id="name" name="name" placeholder="Nombre" required>
+                            <label class="col" for="surname">Apellidos</label>
+                            <input class="col" type="text" id="surname" name="surname" placeholder="Apellidos" required>
+                            <label class="col" for="email">Correo</label>
+                            <input class="col" type="text" id="dni" name="dni" placeholder="DNI" pattern="^[0-9]{8}[A-Z]{1}$" required>
+                            <div class="col">
+                                <input type="radio" id="hombre" name="sexo" value="hombre" required checked>
+                                <label for="hombre">Hombre</label>
+                            </div>
+                            <div class="col">
+                                <input class="col" type="radio" id="mujer" name="sexo" value="mujer" required>
+                                <label class="col" for="mujer">Mujer</label>
+                            </div>
+                            <label class="col col-span-2" for="fecha_nacimiento">Fecha de nacimiento</label>
+                            <input class="col col-span-2" type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                            <label class="col" for="ciudad">Ciudad</label>
+                            <input class="col" type="text" id="ciudad" name="ciudad" placeholder="Ciudad" required>
+                            <label class="col" for="nacionalidad">Nacionalidad</label>
+                            <input class="col" type="text" id="nacionalidad" name="nacionalidad" placeholder="Nacionalidad" required>
+                            <label class="col" for="postal_code">Codigo postal</label>
+                            <input class="col" type="text" id="postal_code" name="postal_code" placeholder="Codigo postal" pattern="^[0-9]{5}$" required>
+                            <label class="col" for="telefono">Telefono</label>
+                            <input class="col" type="text" id="telefono" name="telefono" placeholder="Telefono" pattern="^[0-9]{9}$" required>
+                            <label class="col" for="email">E-Mail</label>
+                            <input class="col" type="email" id="email" name="email" placeholder="E-Mail" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required>
+                        </div>
+                    </fieldset>
+                    <fieldset name="formacion">
+                        <legend>Formacion</legend>
+                        <div class="grid">
+                            <label class="col col-span-2">Titulación</label>
+                            <label class="col col-span-2">Fecha Inicio</label>
+                            <label class="col col-span-2">Fecha Fin</label>
+                            <input class="col col-span-2" type="text" name="titulacion1" placeholder="Titulacion 1">
+                            <input class="col col-span-2" type="date" name="fecha_inicio1" placeholder="Fecha de inicio">
+                            <input class="col col-span-2" type="date" name="fecha_fin1" placeholder="Fecha de fin">
+                            <input class="col col-span-2" type="text" name="titulacion2" placeholder="Titulacion 2">
+                            <input class="col col-span-2" type="date" name="fecha_inicio2" placeholder="Fecha de inicio">
+                            <input class="col col-span-2" type="date" name="fecha_fin2" placeholder="Fecha de fin">
+                            <input class="col col-span-2" type="text" name="titulacion3" placeholder="Titulacion 3">
+                            <input class="col col-span-2" type="date" name="fecha_inicio3" placeholder="Fecha de inicio">
+                            <input class="col col-span-2" type="date" name="fecha_fin3" placeholder="Fecha de fin">
+                        </div>
+                    </fieldset>
+                    <fieldset name="idiomas">
+                        <legend>Idiomas</legend>
+                    </fieldset>
+                    <input type="button" value="Enviar">
+                </form>
+        </div>
+    </main>
+    <footer>
+        <p>También puedes visitarnos en</p>
+        <ul>
+            <li><a href="#" target="_blank"><img src="../src/img/facebook.svg" alt="Facebook"></a></li>
+            <li><a href="#" target="_blank"><img src="../src/img/instagram.svg" alt="Instagram"></a></li>
+            <li><a href="#" target="_blank"><img src="../src/img/linkedin.svg" alt="Linkedin"></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

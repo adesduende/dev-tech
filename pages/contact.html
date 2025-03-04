@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="../src/css/contact.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img class="logo" src="../src/img/logo.svg" alt="Logo" />
+            <h1>DEV-<span>TECH</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">¿Quienes somos?</a></li>
+                <li><a href="./products.html">Productos y Servicios</a></li>
+                <li><a href="./contact.html" active>Contacto</a></li>
+                <li><a href="./work.html">Trabaja con nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main-container">
+            <article>
+                <h2>Donde encontrarnos</h2>
+                <p>Estamos en la calle Albalá, 21, 28037 Madrid</p>
+                <p>
+                    Si tienes alguna duda, puedes contactar con nosotros en el teléfono
+                    91 123 45 67
+                </p>
+                <p>
+                    O si lo prefieres, puedes enviarnos un correo a
+                    <a href="mailto:sll0019@alu.medac.es" target="_blank">sll0019@alu.medac.es</a>
+                </p>
+
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.759606957101!2d-3.621939423662516!3d40.43632165444621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422f8b2d42b8b7%3A0x526c72f8e767e9ad!2sMEDAC%20Madrid%20Albal%C3%A1%20-%20Formaci%C3%B3n%20Profesional!5e0!3m2!1ses!2ses!4v1740332674498!5m2!1ses!2ses"
+                        width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </article>
+            <article>
+                <h2>Solicitud de informacion</h2>
+                <form action="mailto:sll0019@alu.meda.es" method="post" enctype="text/plain">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" maxlength="30" required />
+                    <label for="email">Correo</label>
+                    <input type="email" id="email" name="email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required />
+                    <label for="phone">Telefono</label>
+                    <input type="text" id="phone" name="phone" pattern="^[0-9]{9}$" required />
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Enviar</button>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <p>También puedes visitarnos en</p>
+        <ul>
+            <li>
+                <a href="#" target="_blank"><img src="../src/img/facebook.svg" alt="Facebook" /></a>
+            </li>
+            <li>
+                <a href="#" target="_blank"><img src="../src/img/instagram.svg" alt="Instagram" /></a>
+            </li>
+            <li>
+                <a href="#" target="_blank"><img src="../src/img/linkedin.svg" alt="Linkedin" /></a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
