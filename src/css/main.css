@@ -107,7 +107,7 @@ body {
                             border-radius: 5px 5px 0 0;
                         }
 
-                        &[active] {
+                        &.active {
                             background-color: var(--color-primary);
                             color: var(--emphasize);
                             border-radius: 5px 5px 0 0;
