@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
+    <meta charset="UTF-8">
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="../src/css/work.css">
 </head>
@@ -18,7 +19,7 @@
                 <li><a href="./about.html">¿Quienes somos?</a></li>
                 <li><a href="./products.html">Productos y Servicios</a></li>
                 <li><a href="./contact.html">Contacto</a></li>
-                <li><a href="./work.html" active>Trabaja con nosotros</a></li>
+                <li><a href="./work.html" class="active">Trabaja con nosotros</a></li>
             </ul>
         </nav>
     </header>
@@ -43,7 +44,8 @@
                             <label class="col" for="surname">Apellidos</label>
                             <input class="col" type="text" id="surname" name="surname" placeholder="Apellidos" required>
                             <label class="col" for="email">Correo</label>
-                            <input class="col" type="text" id="dni" name="dni" placeholder="DNI" pattern="^[0-9]{8}[A-Z]{1}$" required>
+                            <input class="col" type="text" id="dni" name="dni" placeholder="DNI"
+                                pattern="^[0-9]{8}[A-Z]{1}$" required>
                             <div class="col">
                                 <input type="radio" id="hombre" name="sexo" value="hombre" required checked>
                                 <label for="hombre">Hombre</label>
@@ -53,17 +55,22 @@
                                 <label class="col" for="mujer">Mujer</label>
                             </div>
                             <label class="col col-span-2" for="fecha_nacimiento">Fecha de nacimiento</label>
-                            <input class="col col-span-2" type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                            <input class="col col-span-2" type="date" id="fecha_nacimiento" name="fecha_nacimiento"
+                                required>
                             <label class="col" for="ciudad">Ciudad</label>
                             <input class="col" type="text" id="ciudad" name="ciudad" placeholder="Ciudad" required>
                             <label class="col" for="nacionalidad">Nacionalidad</label>
-                            <input class="col" type="text" id="nacionalidad" name="nacionalidad" placeholder="Nacionalidad" required>
+                            <input class="col" type="text" id="nacionalidad" name="nacionalidad"
+                                placeholder="Nacionalidad" required>
                             <label class="col" for="postal_code">Codigo postal</label>
-                            <input class="col" type="text" id="postal_code" name="postal_code" placeholder="Codigo postal" pattern="^[0-9]{5}$" required>
+                            <input class="col" type="text" id="postal_code" name="postal_code"
+                                placeholder="Codigo postal" pattern="^[0-9]{5}$" required>
                             <label class="col" for="telefono">Telefono</label>
-                            <input class="col" type="text" id="telefono" name="telefono" placeholder="Telefono" pattern="^[0-9]{9}$" required>
+                            <input class="col" type="text" id="telefono" name="telefono" placeholder="Telefono"
+                                pattern="^[0-9]{9}$" required>
                             <label class="col" for="email">E-Mail</label>
-                            <input class="col" type="email" id="email" name="email" placeholder="E-Mail" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required>
+                            <input class="col" type="email" id="email" name="email" placeholder="E-Mail"
+                                pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required>
                         </div>
                     </fieldset>
                     <fieldset name="formacion">
@@ -73,21 +80,66 @@
                             <label class="col col-span-2">Fecha Inicio</label>
                             <label class="col col-span-2">Fecha Fin</label>
                             <input class="col col-span-2" type="text" name="titulacion1" placeholder="Titulacion 1">
-                            <input class="col col-span-2" type="date" name="fecha_inicio1" placeholder="Fecha de inicio">
-                            <input class="col col-span-2" type="date" name="fecha_fin1" placeholder="Fecha de fin">
+                            <input class="col col-span-2" type="date" name="fecha_inicio1">
+                            <input class="col col-span-2" type="date" name="fecha_fin1">
                             <input class="col col-span-2" type="text" name="titulacion2" placeholder="Titulacion 2">
-                            <input class="col col-span-2" type="date" name="fecha_inicio2" placeholder="Fecha de inicio">
-                            <input class="col col-span-2" type="date" name="fecha_fin2" placeholder="Fecha de fin">
+                            <input class="col col-span-2" type="date" name="fecha_inicio2">
+                            <input class="col col-span-2" type="date" name="fecha_fin2">
                             <input class="col col-span-2" type="text" name="titulacion3" placeholder="Titulacion 3">
-                            <input class="col col-span-2" type="date" name="fecha_inicio3" placeholder="Fecha de inicio">
-                            <input class="col col-span-2" type="date" name="fecha_fin3" placeholder="Fecha de fin">
+                            <input class="col col-span-2" type="date" name="fecha_inicio3">
+                            <input class="col col-span-2" type="date" name="fecha_fin3">
                         </div>
                     </fieldset>
                     <fieldset name="idiomas">
                         <legend>Idiomas</legend>
+                        <div class="grid">
+                            <label class="col col-span-3">Idioma</label>
+                            <label class="col">Hablado</label>
+                            <label class="col">Leido</label>
+                            <label class="col">escrito</label>
+                            <input class="col col-span-3" type="text" name="idioma1" placeholder="Idioma">
+                            <select class="col" name="hablado1">
+                                <option value="Excelente">Excelente</option>
+                                <option value="Bien">Bien</option>
+                                <option value="Regular">Regular</option>
+                                <option value="Nada" selected>Nada</option>
+                            </select>
+                            <select class="col" name="leido1">
+                                <option value="Excelente">Excelente</option>
+                                <option value="Bien">Bien</option>
+                                <option value="Regular">Regular</option>
+                                <option value="Nada" selected>Nada</option>
+                            </select>
+                            <select class="col" name="escrito1">
+                                <option value="Excelente">Excelente</option>
+                                <option value="Bien">Bien</option>
+                                <option value="Regular">Regular</option>
+                                <option value="Nada" selected>Nada</option>
+                            </select>
+                            <input class="col col-span-3" type="text" name="idioma2" placeholder="Idioma">
+                            <select class="col" name="hablado2">
+                                <option value="Excelente">Excelente</option>
+                                <option value="Bien">Bien</option>
+                                <option value="Regular">Regular</option>
+                                <option value="Nada" selected>Nada</option>
+                            </select>
+                            <select class="col" name="leido2">
+                                <option value="Excelente">Excelente</option>
+                                <option value="Bien">Bien</option>
+                                <option value="Regular">Regular</option>
+                                <option value="Nada" selected>Nada</option>
+                            </select>
+                            <select class="col" name="escrito2">
+                                <option value="Excelente">Excelente</option>
+                                <option value="Bien">Bien</option>
+                                <option value="Regular">Regular</option>
+                                <option value="Nada" selected>Nada</option>
+                            </select>
+                        </div>
                     </fieldset>
                     <input type="button" value="Enviar">
                 </form>
+            </article>
         </div>
     </main>
     <footer>
